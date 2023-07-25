@@ -1,0 +1,351 @@
+:root {
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almostBlack: hsl(0, 0%, 8%);
+    --fontSize: 18px;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body, body * {
+    font-family: 'Epilogue';
+    
+}
+
+/* MOBILE CSS */
+.mobile-container {
+    background-color:var(--almostWhite);
+    height:100%;
+    width:100%;
+    display:none;
+}
+
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 20px
+}
+
+.mainImg {
+    width:100%;
+}
+
+.mainImg img {
+    max-width:100%;
+    height:auto;
+}
+
+.remoteworknews {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.title {
+    padding:32px 20px 0 20px;
+    font-size:32px;
+}
+
+.text {
+    opacity:0.7;
+    text-align:center;
+    padding:20px 30px;
+    line-height: 1.5;
+    font-size:18px;
+}
+
+.btn {
+    padding:12px 20px;
+    background-color:black;
+    color:white;
+    border-radius:12px;
+    margin-top:8px;
+}
+
+.footerLogos {
+    padding:48px 0;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.menu {
+    position:fixed;
+    background-color:var(--almostWhite);
+    width:300px;
+    height:100vh;
+    right:-100%;
+    bottom:0;
+    top:0;
+    z-index:1;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    transition:0.3s
+}
+
+.dropdown, .dropdown2 {
+    width:50%;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+#drop1, #drop2, #drop3, #drop4 {
+    cursor:pointer;
+}
+
+#close, #close2 {
+    display:block;
+    padding-top:8px
+}
+
+#open, #open2 {
+    display:none;
+    padding-top:8px;
+}
+
+#items { 
+    display:none;
+    grid-template-columns: 10% 90%;
+    margin-top:10px;
+
+}
+
+#items svg {
+    margin:10px 0 0 40px
+}
+
+#items2 {
+    display:none;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin-top:10px;
+}
+
+.subitem {
+    margin: 10px 40px;
+    opacity:0.7;
+}
+
+.subitem2 {
+    margin:10px 40px;
+    opacity:0.7;
+}
+
+.mainItem {
+    padding:10px 0;
+    color:var(--mediumGray);
+}
+
+.mainItem a {
+    color:var(--mediumGray);
+    text-decoration: none;
+}
+
+.login {
+    margin-top:24px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login a {
+    color:var(--almostBlack);
+    text-decoration:none;
+}
+
+.login button {
+    margin-top:16px;
+    padding:12px 86px;
+    background-color:var(--almostWhite);
+    border-radius:10px;
+    font-size:18px;
+    color:var(--mediumGray);
+    cursor:pointer;
+    border:2px solid black;
+}
+
+#openham, #closeham {
+    cursor: pointer;
+} 
+
+/*DESKTOP CSS*/
+
+.desktop-container {
+    height:auto;
+}
+
+.desktop-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 35px 25px;
+}
+
+.desktop-nav {
+    display:flex;
+    margin-right:5%;
+    width:60%;
+}
+
+.desktop-navitem {
+    padding-left:32px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    cursor:pointer;
+}
+
+.desktop-navitem a {
+    text-decoration:none;
+    color:var(--mediumGray);
+    transition: 0.3s;
+}
+
+.desktop-navitem a:hover {
+    color: var(--almostBlack);
+}
+
+
+.desktop-login {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width:20%;
+}
+
+.desktop-hero {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.desktop-img {
+    width:40%;
+    padding:0 5%;
+}
+
+.desktop-makeremotework {
+    width:41.5%;
+    padding: 0 2.5%;
+}
+
+.desktop-img img {
+    max-width:100%;
+    height:auto;
+}
+
+.desktop-title {
+    font-size:80px;
+    margin: 80px 0;
+}
+
+.desktop-text {
+    font-size:24px;
+    margin: 50px 0 0 0;
+    opacity:0.7;
+    line-height: 1.5;
+}
+
+.desktop-button {
+    margin: 50px 0 100px 0;
+    background-color:black;
+    padding:15px 30px;
+    color:white;
+    border:2px solid var(--almostBlack);
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.desktop-button:hover {
+    color:var(--almostBlack);
+    background-color:var(--almostWhite);
+}
+
+.twoTime {
+    margin-bottom:30px;
+
+}
+
+.desktop-login-btn {
+    padding:12px 20px;
+    background-color:var(--almostWhite);
+    color:var(--mediumGray);
+    border:2px solid var(--almostBlack);
+    border-radius:12px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.desktop-login-btn:hover {
+    color:var(--almostBlack)
+}
+
+#desktop-close, #desktop-close2 {
+    margin-left:5px;
+}
+
+#desktop-open, #desktop-open2 {
+    display:none;
+    margin-left:5px;
+}
+
+#desktop-submenu {
+    top:50px;
+    right:0;
+    background-color:var(--almostWhite);
+    position:absolute;
+    display:none;
+    grid-template-columns: 20% 80%;
+    padding:15px 25px;
+    box-shadow: 0px 5px 10px 1px var(--mediumGray);
+    border-radius:10px;
+}
+
+.desktop-subitem {
+    margin:10px 5px;
+    cursor:pointer;
+}
+
+#desktop-submenu svg {
+    margin: 10px 0;
+}
+
+#desktop-submenu2 {
+    background-color:var(--almostWhite);
+    position:absolute;
+    display:none;
+    width:130px;
+    top:50px;
+    left:32px;
+    padding:15px 25px;
+    box-shadow: 0px 5px 10px 1px var(--mediumGray);
+    border-radius:10px;
+}
+
+.desktop-subitem2 {
+    margin: 16px 0;
+    cursor:pointer;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .desktop-container {
+        display:none;
+    }
+    .mobile-container {
+        display:block;
+    }
+  }
